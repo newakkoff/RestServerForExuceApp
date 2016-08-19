@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/RestServerForExuceApp.iml" filepath="$PROJECT_DIR$/RestServerForExuceApp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/RestServerForExuceApp.iml" filepath="$PROJECT_DIR$/.idea/modules/RestServerForExuceApp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/RestServerForExuceApp_main.iml" filepath="$PROJECT_DIR$/.idea/modules/RestServerForExuceApp_main.iml" group="RestServerForExuceApp" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/RestServerForExuceApp_test.iml" filepath="$PROJECT_DIR$/.idea/modules/RestServerForExuceApp_test.iml" group="RestServerForExuceApp" />
     </modules>
   </component>
 </project>
