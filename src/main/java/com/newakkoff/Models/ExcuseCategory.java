@@ -1,7 +1,6 @@
 package com.newakkoff.Models;
 
 import org.springframework.data.annotation.Id;
-import org.springframework.data.mongodb.core.mapping.Document;
 
 /**
  * Created by Фахош on 20.08.2016.
@@ -41,7 +40,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 
     @Override
     public String toString() {
-        return String.format("ExcuseCategory{id=%s, categoryName='%s', categoryDescription='%s'}",
+        return String.format("{id=%s, categoryName='%s', categoryDescription='%s'},",
                 id, categoryName, categoryDescription);
     }
 }
