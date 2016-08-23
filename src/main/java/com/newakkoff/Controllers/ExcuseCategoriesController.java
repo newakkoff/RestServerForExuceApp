@@ -7,8 +7,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.ArrayList;
 import java.util.List;
-import java.util.stream.Collectors;
 
 /**
  * Created by Фахош on 20.08.2016.
@@ -20,16 +20,13 @@ public class ExcuseCategoriesController {
     private ExcuseCategoriesRepository excuseCategoriesRepository;
 
     @RequestMapping("/allexcusecategory")
-    public String ExcuseCategory() {
+    public List<ExcuseCategory> getAllExcuseCategories() {
 
-        String allCategories = "ExcuseCategories [";
+        List<ExcuseCategory> allCategories = new ArrayList<>();
+        allCategories.addAll(excuseCategoriesRepository.findAll());
 
-        for (ExcuseCategory excuseCategory : excuseCategoriesRepository.findAll()) {
-            allCategories = allCategories +" "+ excuseCategory.toString();
-        }
 
-        allCategories = allCategories + "]";
-        return allCategories;
+        return allCategories  ;
     }
 
     @RequestMapping("/addexcusecategory")

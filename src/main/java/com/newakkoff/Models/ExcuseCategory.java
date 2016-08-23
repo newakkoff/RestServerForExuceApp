@@ -7,8 +7,9 @@ import org.springframework.data.annotation.Id;
  */
 
  public class ExcuseCategory {
+
     @Id
-    private String id;
+    private  String id;
 
     private String categoryName;
     private String categoryDescription;
@@ -38,9 +39,7 @@ import org.springframework.data.annotation.Id;
         this.categoryDescription = categoryDescription;
     }
 
-    @Override
-    public String toString() {
-        return String.format("{id=%s, categoryName='%s', categoryDescription='%s'},",
-                id, categoryName, categoryDescription);
+    public String getId() {
+        return id;
     }
 }
