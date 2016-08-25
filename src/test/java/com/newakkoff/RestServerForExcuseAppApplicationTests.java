@@ -11,6 +11,7 @@ public class RestServerForExcuseAppApplicationTests {
 
 	@Test
 	public void contextLoads() {
+
 	}
 
 }

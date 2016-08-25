@@ -8,4 +8,6 @@ import org.springframework.data.mongodb.repository.MongoRepository;
  */
 public interface ExcuseCategoriesRepository extends MongoRepository<ExcuseCategory, String> {
 
+    ExcuseCategory findExcuseCategoryBycategoryNameIgnoreCase(String name);
+
 }
